@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="mt-[100px] relative rounded-xl ring-1 ring-ring overflow-hidden mx-5 mb-[60px]">
         <div className="">
           <video 
-            src={require('../../../../public/video-banner.mp4')} 
+            src="/video-banner.mp4"
             autoPlay 
             muted 
             loop 
