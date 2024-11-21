@@ -1,4 +1,4 @@
-import Avatar from "/public/richard.jpg"
+
 import Image from "next/image"
 import {
     Card,
