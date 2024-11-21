@@ -77,26 +77,34 @@
   @apply mx-5 p-5;
   max-width: 1350px;  
 }
-.landing-hero-container {
-  @apply mx-5 p-5;
-  max-width: 1350px;  
-}
 .main-nav-container {
   @apply mx-5 px-5 ;
   width: 1350px;  
 }
-a {
+/* a {
   @apply font-bold;
-}
+} */
 .heading {
   @apply text-5xl font-medium text-headingtext tracking-normal leading-tight
 }
 .leading {
-  @apply text-lg text-ptext font-semibold tracking-wider leading-relaxed
+  @apply text-xl text-ptext font-medium tracking-wider leading-relaxed
+}
+.p {
+  @apply text-ptext tracking-wide leading-relaxed text-lg
 }
 .pill {
   @apply py-1 px-3 text-sm text-headingtext bg-primary inline-block rounded-md font-semibold
 }
 .spacer {
   @apply w-[80px] h-1 bg-primary my-8 rounded-full
+}
+nav .origin-top-center {
+  margin-top: 15px;
+}
+#navbar-resources-menu a {
+  width: 100%;
+}
+.text-highlight {
+  @apply text-primary bg-ptext/70 px-[2px] rounded-sm font-semibold tracking-tight 
 }

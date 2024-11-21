@@ -7,6 +7,7 @@ import { buttonVariants } from "@/components/ui/button"
 import NavbarLinks from "./NavbarLinks";
 import MobileNav from "./MobileNav";
 
+
 export default function Navbar() {
   return (
     <div className="backdrop-blur-xl bg-background/60 w-full flex justify-center fixed z-40 h-[55px]">
@@ -35,6 +36,9 @@ export default function Navbar() {
           />
         </Link>
         <NavbarLinks />
+        
+   
+
         </div>
         <div className=" gap-2 lg:flex hidden items-center">
         <Link 
