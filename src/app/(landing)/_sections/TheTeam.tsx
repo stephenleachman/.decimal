@@ -1,5 +1,6 @@
 import TeamCard from "../components/TeamCard";
 import { TeamMembers } from "@/constantes";
+import Marquee from "react-fast-marquee";
 
 export default function TheTeam() {
   return (
@@ -17,8 +18,11 @@ export default function TheTeam() {
         </div>
       </div>
 
-      <div className="flex overflow-hidden nowrap space-x-7">
-        <div className="flex mb-20 animate-loop-scroll nowrap space-x-7">
+      <div className="flex overflow-hidden nowrap relative">
+        <Marquee
+          pauseOnHover={true}
+          speed={100}
+        >
           {TeamMembers.map((member, index) => (
             <TeamCard 
             key={`first-${index}`} 
@@ -27,23 +31,9 @@ export default function TheTeam() {
             image={member.image}
             />
           ))}
-        </div>
-        <div className="flex animate-loop-scroll nowrap space-x-7">
-          {TeamMembers.map((member, index) => (
-            <TeamCard 
-            key={`second-${index}`} 
-            name={member.name}
-            title={member.title}
-            image={member.image}
-            aria-hidden={true}
-            />
-          ))}
-        </div>
+        </Marquee>
       </div>
     </div>
   )
 }
 
-
-  {/* <div className="absolute inset-x-0 top-0 h-20 z-10 bg-gradient-to-b from-background2 to-background2/0"></div>
-          <div className="absolute inset-x-0 bottom-0 h-20 z-10 bg-gradient-to-t from-background to-background/0"></div> */}

@@ -14,9 +14,16 @@ import {
   }
 const TeamCard: React.FC<TeamCardProps> = ({ name, title, image }) => {
   return (
-    <Card className="text-center z-0  nowrap flex-shrink-0 ">
-      <CardHeader>
-        <div className="flex flex-col items-center gap-3">
+    <Card className="text-center z-0 min-w-[350px] mx-2 xl:mx-5 relative">
+      <CardHeader >
+      <Image
+        src="/logos/logo-bg.svg"
+        alt="logo"
+        className="h-[190px] absolute bottom-1 right-1 z-0 opacity-5"
+        width={200}
+        height={300}
+      />
+        <div className="flex flex-col items-center gap-3 z-10">
         <Image 
           src={image}
           alt="avatar"

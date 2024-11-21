@@ -5,15 +5,6 @@ const config: Config = {
   content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
   	extend: {
-		animation: {
-			"loop-scroll": 'loop-scroll 10s linear infinite',
-		  },
-		  keyframes: {
-			"loop-scroll": {
-			  from: { transform: 'translatex(0)' },
-			  to: { transform: 'translatex(-100%)' },
-			},
-		},
   		colors: {
   			background: 'hsl(var(--background))',
   			background2: 'hsl(var(--background-2))',
